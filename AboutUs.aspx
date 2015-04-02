@@ -47,11 +47,7 @@
 
         </p>
     </div>
-        <h4>
-   
-            &copy; Kyle Cerchio 2015 How Good is Your Recipe?
-      
-        </h4>
+    
       
        
     </form>
