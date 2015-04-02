@@ -8,6 +8,6 @@ Partial Class admin_Default
 
 
     Protected Sub FormView1_ItemInserted(sender As Object, e As FormViewInsertedEventArgs) Handles FormView1.ItemInserted
-        Response.Redirect("./Roster.aspx")
+        Response.Redirect("~/Roster.aspx")
     End Sub
 End Class

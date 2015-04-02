@@ -7,6 +7,7 @@
     <title></title>
     <asp:ContentPlaceHolder id="head" runat="server">
     </asp:ContentPlaceHolder>
+    <link rel="stylesheet" type="text/css" href="stylesheet.css" />
 </head>
 <body>
     <form id="form1" runat="server">
@@ -15,9 +16,15 @@
             <h1>The 2015 Chicago Cubs!</h1>
             <h3>Let's Go!</h3>
         </div>
+        <div id="right_header">
+            
+            <asp:Image ID="Image1" runat="server" ImageUrl="~/siteManger/graphics/cubslogo.png" Height="183px" Width="242px" />
 
+        </div>
     <div id="menu">
+
         <ul id="nav">
+
         <asp:HyperLink ID="Home" runat="server" NavigateUrl="~/Default.aspx">Home</asp:HyperLink>&nbsp; 
             <li><asp:HyperLink ID="ViewRoster" runat="server" NavigateUrl="~/roster.aspx">Roster</asp:HyperLink>&nbsp;</li>
             <li><asp:HyperLink ID="Search" runat="server" NavigateUrl="~/search.aspx">Search</asp:HyperLink>&nbsp;</li>
@@ -28,13 +35,12 @@
 
         </ul>
     </div>
-
-        <div id="main"
+        
+        <div id="main">
         <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
-        <p>
-
-           <img alt="" class="auto-style1" src="C:/Users/kcerchio/Desktop/HW7/wrigley.jpg" />
-        </p>
+            
+        <img alt="" class="auto-style1" src="C:/Users/kcerchio/Desktop/HW7/wrigley.jpg" /></p>
+    
 
         </asp:ContentPlaceHolder>
     </div>
@@ -45,9 +51,8 @@
         &nbsp;<asp:Label ID="Lbl_time" runat="server" Text="Label"></asp:Label>
 
 
-
-
     </div>
     </form>
+   
 </body>
 </html>

@@ -12,17 +12,7 @@
     <div>
     <h1>Chicago Cubs Baseball</h1>
     <h2>Let's Go</h2>
-        <br />
-
-        <h4>
-            <asp:HyperLink ID="Home" runat="server" NavigateUrl="~/Default.aspx">Home</asp:HyperLink>&nbsp; 
-            <asp:HyperLink ID="ViewWholeTeam" runat="server" NavigateUrl="~/NewRecipe.aspx">New Recipe</asp:HyperLink>&nbsp;
-            <asp:HyperLink ID="AboutUs" runat="server" NavigateUrl="~/AboutUs.aspx">About Us</asp:HyperLink>&nbsp;
-            <asp:HyperLink ID="ContactUs" runat="server" NavigateUrl="~/contact.aspx">Contact Us</asp:HyperLink>&nbsp;
-            <asp:HyperLink ID="" runat="server" NavigateUrl="~/contact.aspx">Contact Us</asp:HyperLink>&nbsp;
-        </h4>
-
-        <br />
+      
 
         <p
              class="paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla
