@@ -23,15 +23,18 @@
     </div>
     <asp:Label ID="Label1" runat="server" CssClass="deletedPlayer"></asp:Label>
         <asp:DetailsView ID="DetailsView1" runat="server" CssClass="detailsview" FieldHeaderStyle-CssClass="fielderheader" AlternatingRowStyle-CssClass="altrow" AutoGenerateRows="False" DataKeyNames="player_ID" DataSourceID="Sql_cubs" Height="50px" Width="125px">
+<AlternatingRowStyle CssClass="altrow"></AlternatingRowStyle>
+
+<FieldHeaderStyle CssClass="fielderheader"></FieldHeaderStyle>
             <Fields>
-                <asp:BoundField DataField="player_ID" HeaderText="player_ID" InsertVisible="False" ReadOnly="True" SortExpression="player_ID" />
+                <asp:BoundField DataField="player_ID" HeaderText="ID" InsertVisible="False" ReadOnly="True" SortExpression="player_ID" />
                 <asp:BoundField DataField="player_name" HeaderText="Name" SortExpression="player_name" />
-                <asp:BoundField DataField="player_number" HeaderText="player_number" SortExpression="player_number" />
-                <asp:BoundField DataField="player_position" HeaderText="player_position" SortExpression="player_position" />
-                <asp:BoundField DataField="player_ba" HeaderText="player_ba" SortExpression="player_ba" />
-                <asp:BoundField DataField="player_hr" HeaderText="player_hr" SortExpression="player_hr" />
-                <asp:BoundField DataField="player_steals" HeaderText="player_steals" SortExpression="player_steals" />
-                <asp:BoundField DataField="player_age" HeaderText="player_age" SortExpression="player_age" />
+                <asp:BoundField DataField="player_number" HeaderText="#" SortExpression="player_number" />
+                <asp:BoundField DataField="player_position" HeaderText="Position" SortExpression="player_position" />
+                <asp:BoundField DataField="player_ba" HeaderText="Batting Average" SortExpression="player_ba" />
+                <asp:BoundField DataField="player_hr" HeaderText="Home Runs" SortExpression="player_hr" />
+                <asp:BoundField DataField="player_steals" HeaderText="Steals" SortExpression="player_steals" />
+                <asp:BoundField DataField="player_age" HeaderText="Age" SortExpression="player_age" />
             </Fields>
     </asp:DetailsView>
 

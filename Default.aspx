@@ -13,7 +13,7 @@
 
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
 
-    WELCOME TO YOUR HOME OF THE CHICAGO CUBS
+    <h1>WELCOME TO YOUR HOME OF THE CHICAGO CUBS</h1>
     <br />
     <br />
     <img alt="" class="auto-style1" src="C:/Users/kcerchio/Desktop/HW7/wrigley.jpg" />
