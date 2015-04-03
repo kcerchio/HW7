@@ -1,16 +1,10 @@
-﻿<%@ Page Language="VB" AutoEventWireup="false" CodeFile="Roster.aspx.vb" Inherits="_Default" %>
+﻿<%@ Page Title="" Language="VB" MasterPageFile="~/cubs.master" AutoEventWireup="false" CodeFile="Roster.aspx.vb" Inherits="Default2" %>
 
-<!DOCTYPE html>
-
-<html xmlns="http://www.w3.org/1999/xhtml">
-<head runat="server">
-    <title></title>
-    <link rel="stylesheet" type="text/css" href="stylesheet.css" />
-</head>
-<body>
-    <form id="form1" runat="server">
-    <div>
-    
+<asp:Content ID="Content1" ContentPlaceHolderID="head" Runat="Server">
+</asp:Content>
+<asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
+     <div>
+    <br />
         <asp:SqlDataSource ID="Sql_cubs" runat="server" ConnectionString="<%$ ConnectionStrings:db_kcerchioCubs %>" 
             
             DeleteCommand="DELETE FROM [kcerchio_cubs] WHERE [player_ID] = @player_ID" 
@@ -41,7 +35,7 @@
             </UpdateParameters>
         </asp:SqlDataSource>
 
-        <asp:GridView ID="GridView1" runat="server" AllowPaging="True" AllowSorting="True" AutoGenerateColumns="False" DataKeyNames="player_ID" DataSourceID="Sql_cubs">
+        <asp:GridView ID="GridView1" runat="server" CssClass="gridview" AlternatingRowStyle-CssClass="alt" AllowPaging="True" AllowSorting="True" AutoGenerateColumns="False" DataKeyNames="player_ID" DataSourceID="Sql_cubs">
             <Columns>
                 <asp:BoundField DataField="player_name" HeaderText="Player Name" SortExpression="player_name" />
                 <asp:BoundField DataField="player_number" HeaderText="Player Number" SortExpression="player_number" />
@@ -51,6 +45,11 @@
         </asp:GridView>
     
     </div>
-    </form>
-</body>
-</html>
+
+
+
+
+
+
+</asp:Content>
+

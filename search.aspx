@@ -1,16 +1,17 @@
-﻿<%@ Page Language="VB" AutoEventWireup="false" CodeFile="search.aspx.vb" Inherits="Default2" %>
+﻿<%@ Page Title="" Language="VB" MasterPageFile="~/cubs.master" AutoEventWireup="false" CodeFile="search.aspx.vb" Inherits="Default2" %>
 
-<!DOCTYPE html>
+<asp:Content ID="Content1" ContentPlaceHolderID="head" Runat="Server">
+</asp:Content>
+<asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
 
-<html xmlns="http://www.w3.org/1999/xhtml">
-<head runat="server">
-    <title></title>
-</head>
-<body>
-    <form id="form1" runat="server">
-    <div>
+
+        <div>
+             <asp:SqlDataSource ID="Sql_cubsPlayers" runat="server" ConnectionString="<%$ ConnectionStrings:db_kcerchioCubs %>" SelectCommand="SELECT * FROM [kcerchio_cubs]"></asp:SqlDataSource>
+            <br />
+
+
       <%If Not IsPostBack Then%>
-        <asp:SqlDataSource ID="Sql_cubsPlayers" runat="server" ConnectionString="<%$ ConnectionStrings:db_kcerchioCubs %>" SelectCommand="SELECT * FROM [kcerchio_cubs]"></asp:SqlDataSource>
+       
         Search for a player name: &nbsp;&nbsp;&nbsp;<asp:TextBox ID="searchtb" runat="server"></asp:TextBox>
     
     <% Else%>
@@ -35,6 +36,6 @@
         </asp:GridView>
         <% End If%>
         </div>
-    </form>
-</body>
-</html>
+
+</asp:Content>
+

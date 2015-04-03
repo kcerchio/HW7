@@ -1,5 +1,4 @@
-﻿
-'Add these two imports so you have access to the mail features.
+﻿'Add these two imports so you have access to the mail features.
 Imports System.Net.Mail
 Imports System.Net
 
@@ -50,5 +49,17 @@ Partial Class _default
 
 
     End Sub
+
+
+
+
+
+
+
+
+
+
+
+
 
 End Class

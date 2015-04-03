@@ -9,12 +9,9 @@ Partial Class Default2
     End Sub
 
 
-
-
     Protected Sub anothertb_TextChanged(sender As Object, e As EventArgs) Handles anothertb.TextChanged
         Dim searchWord As String
         searchWord = "Select * From kcerchio_cubs where (player_name Like '&" + anothertb.Text.ToString() + "&')"
         Sql_cubsPlayers.SelectCommand = searchWord
     End Sub
-
 End Class

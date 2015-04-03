@@ -7,15 +7,25 @@
     <title></title>
     <asp:ContentPlaceHolder id="head" runat="server">
     </asp:ContentPlaceHolder>
-    <link rel="stylesheet" type="text/css" href="stylesheet.css" />
+    <link rel="stylesheet" type="text/css" href="./stylesheet.css" />
+    <style type="text/css">
+        .auto-style1
+            {width:878px;
+             height:593px;
+             margin-top:0px;
+        }
+
+    </style>
 </head>
 <body>
     <form id="form1" runat="server">
     <div id="container">
         <div id="header">
             <h1>The 2015 Chicago Cubs!</h1>
-            <h3>Let's Go!</h3>
+            <h3>LET'S GO!</h3>
         </div>
+
+
         <div id="right_header">
             
             <asp:Image ID="Image1" runat="server" ImageUrl="~/siteManger/graphics/cubslogo.png" Height="183px" Width="242px" />
@@ -31,16 +41,13 @@
             <li><asp:HyperLink ID="AboutUs" runat="server" NavigateUrl="~/AboutUs.aspx">About Us</asp:HyperLink>&nbsp;</li>
             <li><asp:HyperLink ID="ContactUs" runat="server" NavigateUrl="~/contact.aspx">Contact Us</asp:HyperLink>&nbsp;</li>
             <li><asp:HyperLink ID="Admin" runat="server" NavigateUrl="~/contact.aspx">Administrator</asp:HyperLink>&nbsp;</li>
-             <li><asp:HyperLink ID="LogIn" runat="server" NavigateUrl="~/contact.aspx">Log In</asp:HyperLink>&nbsp;</li>
-
+            <li><asp:HyperLink ID="LogIn" runat="server" NavigateUrl="~/contact.aspx">Log In</asp:HyperLink>&nbsp;</li>
         </ul>
     </div>
         
         <div id="main">
         <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
-            
-        <img alt="" class="auto-style1" src="C:/Users/kcerchio/Desktop/HW7/wrigley.jpg" /></p>
-    
+           
 
         </asp:ContentPlaceHolder>
     </div>

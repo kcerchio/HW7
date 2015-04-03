@@ -1,13 +1,8 @@
-﻿<%@ Page Language="VB" AutoEventWireup="false" CodeFile="RosterMove.aspx.vb" Inherits="admin_Default" %>
+﻿<%@ Page Title="" Language="VB" MasterPageFile="~/cubs.master" AutoEventWireup="false" CodeFile="RosterMove.aspx.vb" Inherits="admin_Default" %>
 
-<!DOCTYPE html>
-
-<html xmlns="http://www.w3.org/1999/xhtml">
-<head runat="server">
-    <title></title>
-</head>
-<body>
-    <form id="form1" runat="server">
+<asp:Content ID="Content1" ContentPlaceHolderID="head" Runat="Server">
+</asp:Content>
+<asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
     <div>
     
         <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:db_kcerchioCubs %>" 
@@ -75,7 +70,7 @@
 
             <InsertItemTemplate>
 
-                <table>
+                <table class="table">
                
                     <tr>
                         <td style="text-align: right;">
@@ -125,7 +120,7 @@
                           <td style="text-align: left;">
 
                 <asp:TextBox ID="player_baTextBox" runat="server" Text='<%# Bind("player_ba") %>' />
-                <asp:RequiredFieldValidator ID="rfv_playerba" runat="server" ErrorMessage="Please Enter Player Batting Average" ControlToValidate="player_baTextBox"></asp:RequiredFieldValidator>
+           
                 </td>
                       </tr>
 
@@ -138,7 +133,7 @@
                        <td style="text-align: left;">
 
                 <asp:TextBox ID="player_hrTextBox" runat="server" Text='<%# Bind("player_hr") %>' />
-                <asp:RequiredFieldValidator ID="rfv_hr" runat="server" ErrorMessage="Please Enter Home Runs" ControlToValidate="player_baTextBox"></asp:RequiredFieldValidator>
+              
                 </td>
                       </tr>
                 
@@ -153,7 +148,7 @@
 
 
                 <asp:TextBox ID="player_stealsTextBox" runat="server" Text='<%# Bind("player_steals") %>' />
-                <asp:RequiredFieldValidator ID="rfv_steals" runat="server" ErrorMessage="Please Enter Steals" ControlToValidate="player_stealsTextBox"></asp:RequiredFieldValidator>
+           
                 </td>
                       </tr>
 
@@ -166,7 +161,7 @@
                        <td style="text-align: left;">
 
                 <asp:TextBox ID="player_ageTextBox" runat="server" Text='<%# Bind("player_age") %>' />
-                <asp:RequiredFieldValidator ID="rfv_age" runat="server" ErrorMessage="Please Enter Age" ControlToValidate="player_ageTextBox"></asp:RequiredFieldValidator>
+        
                 </td>
                       </tr>
                 
@@ -182,7 +177,7 @@
                
                         </td>
                     
-
+                </table>
 
             </InsertItemTemplate>
            
@@ -218,11 +213,6 @@
         </asp:FormView>
     
         
-    
     </div>
-      
-        
-      
-    </form>
-</body>
-</html>
+</asp:Content>
+

@@ -1,28 +1,17 @@
-﻿<%@ Page Language="VB" AutoEventWireup="false" CodeFile="Contact.aspx.vb" Inherits="Contact" %>
+﻿<%@ Page Title="" Language="VB" MasterPageFile="~/cubs.master" AutoEventWireup="false" CodeFile="Contact.aspx.vb" Inherits="Default2" %>
 
-<!DOCTYPE html>
+<asp:Content ID="Content1" ContentPlaceHolderID="head" Runat="Server">
+</asp:Content>
+<asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
 
-<html xmlns="http://www.w3.org/1999/xhtml">
-
-<head runat="server">
-    <title>Web Contact Form</title>
-    <link rel="stylesheet" type="text/css" href="stylesheet.css" />
-</head>
     
-<body>
-    <form id="form1" runat="server">
-
+         <div>
         <!-- Check to see if you are in postback.  If not, display the contact form. -->
         <% If Not IsPostBack Then%>
 
-        <h1>Chicago Cubs Baseball</h1>
-        <h2>Let's Go</h2>
             <br />
 
-       
-
-        <br />
-     <h4>
+    
         Your name:<br />
         <asp:TextBox ID="senderName" runat="server" placeholder="First and last name" ></asp:TextBox>
         <br />
@@ -56,15 +45,10 @@
         <!-- End your 'If' statement. -->
 
         <%End If%>
-      </h4>
-        <div id="footer">
-            <h4>
-            
-            
-           
-            </h4>
+             
         </div>
 
-    </form>
-</body>
-</html>
+
+
+</asp:Content>
+

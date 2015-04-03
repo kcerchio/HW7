@@ -1,20 +1,11 @@
-﻿<%@ Page Language="VB" AutoEventWireup="false" CodeFile="AboutUs.aspx.vb" Inherits="AboutUs" %>
+﻿<%@ Page Title="" Language="VB" MasterPageFile="~/cubs.master" AutoEventWireup="false" CodeFile="AboutUs.aspx.vb" Inherits="Default2" %>
 
-<!DOCTYPE html>
+<asp:Content ID="Content1" ContentPlaceHolderID="head" Runat="Server">
+</asp:Content>
+<asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
 
-<html xmlns="http://www.w3.org/1999/xhtml">
-<head runat="server">
-    <title></title>
-    <link rel="stylesheet" type="text/css" href="stylesheet.css" />
-</head>
-<body>
-    <form id="form1" runat="server">
     <div>
-    <h1>Chicago Cubs Baseball</h1>
-    <h2>Let's Go</h2>
-      
-
-        <p
+             <p
              class="paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla
             aliquet, tellus sit amet feugiat euismod, velit lectus
             pellentesque nisi, non eleifend quam ipsum at arcu. Sed
@@ -37,9 +28,5 @@
 
         </p>
     </div>
-    
-      
-       
-    </form>
-</body>
-</html>
+</asp:Content>
+
