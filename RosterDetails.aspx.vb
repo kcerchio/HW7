@@ -7,7 +7,7 @@ Partial Class Default2
 
         Label1.Text = deletedPlayer & "has been removed from the Cubs roster"
 
-        Response.AddHeader("REFRESH", "3:URL=./Roster.aspx")
+        Response.AddHeader("REFRESH", "3:URL=~/Roster.aspx")
     End Sub
 
 
@@ -15,6 +15,6 @@ Partial Class Default2
 
 
     Protected Sub DetailsView1_ItemUpdated(sender As Object, e As DetailsViewUpdatedEventArgs) Handles DetailsView1.ItemUpdated
-        Response.AddHeader("REFRESH", "3:URL=./Roster.aspx")
+        Response.AddHeader("REFRESH", "3:URL=~/Roster.aspx")
     End Sub
 End Class
