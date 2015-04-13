@@ -24,6 +24,13 @@
 	        <li><asp:HyperLink ID="HyperLink4" runat="server" NavigateUrl="./siteManger/users_by_role.aspx">View Users By Role</asp:HyperLink></li>
         </ul>
 
+    <br />
+    <ul>
+        <li><asp:HyperLink ID="HyperLink6" runat="server" NavigateUrl="~/admin/Roster.aspx">Edit Roster Detail</asp:HyperLink></li>
+        <li><asp:HyperLink ID="HyperLink7" runat="server" NavigateUrl="./RosterMove.aspx">Roster Moves</asp:HyperLink></li>
+
+    </ul>
+
     <asp:Image ID="Image1" runat="server" ImageUrl="~/Wrigley.jpg" Width="868px" />
     
 
