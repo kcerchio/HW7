@@ -23,7 +23,7 @@
         <br />
         <br />
 
-        <asp:GridView ID="GridView1" CssClass="gridview" runat="server" AutoGenerateColumns="False" DataKeyNames="player_ID" DataSourceID="Sql_cubsPlayers">
+        <asp:GridView ID="GridView1" CssClass="gridview" runat="server" AutoGenerateColumns="False" DataKeyNames="player_ID" DataSourceID="Sql_cubsPlayers" AutoPostBack="true">
             <Columns>
                 <asp:BoundField DataField="player_name" HeaderText="Name" SortExpression="player_name" />
                 <asp:BoundField DataField="player_number" HeaderText="Number" SortExpression="player_number" />

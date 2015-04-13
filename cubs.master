@@ -28,7 +28,7 @@
 
         <div id="right_header">
 
-            <asp:Image ID="Image1" runat="server" ImageUrl="~/siteManger/graphics/cubslogo.png" Height="164px" Width="192px" />
+            <asp:Image ID="Image1" runat="server" ImageUrl="~/admin/siteManger/graphics/cubslogo.png" Height="164px" Width="192px" />
             
         </div>
     <div id="menu">
@@ -40,8 +40,8 @@
             <li><asp:HyperLink ID="Search" runat="server" NavigateUrl="~/search.aspx">Search</asp:HyperLink>&nbsp;</li>
             <li><asp:HyperLink ID="AboutUs" runat="server" NavigateUrl="~/AboutUs.aspx">About Us</asp:HyperLink>&nbsp;</li>
             <li><asp:HyperLink ID="ContactUs" runat="server" NavigateUrl="~/contact.aspx">Contact Us</asp:HyperLink>&nbsp;</li>
-            <li><asp:HyperLink ID="Admin" runat="server" NavigateUrl="~/contact.aspx">Administrator</asp:HyperLink>&nbsp;</li>
-            <li><asp:HyperLink ID="LogIn" runat="server" NavigateUrl="~/contact.aspx">Log In</asp:HyperLink>&nbsp;</li>
+            <li><asp:HyperLink ID="Admin" runat="server" NavigateUrl="~/admin/Default.aspx">Administrator</asp:HyperLink>&nbsp;</li>
+            <li><asp:HyperLink ID="LogIn" runat="server" NavigateUrl="~/login/login.aspx">Log In</asp:HyperLink>&nbsp;</li>
         </ul>
             
             

@@ -1,4 +1,4 @@
-﻿<%@ Page Title="" Language="VB" MasterPageFile="~/cubs.master" AutoEventWireup="false" CodeFile="Default.aspx.vb" Inherits="_Default" %>
+﻿<%@ Page Title="" Language="VB" MasterPageFile="~/cubs.master" AutoEventWireup="false" CodeFile="default.aspx.vb" Inherits="_Default" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="head" Runat="Server">
 
@@ -16,7 +16,9 @@
     <h1>WELCOME TO YOUR HOME OF THE CHICAGO CUBS</h1>
     <br />
     <br />
-    <img alt="" class="auto-style1" src="C:/Users/kcerchio/Desktop/HW7/wrigley.jpg" />
+
+
+    <asp:Image ID="Image1" runat="server" ImageUrl="~/Wrigley.jpg" Width="868px" />
     
 
 </asp:Content>
